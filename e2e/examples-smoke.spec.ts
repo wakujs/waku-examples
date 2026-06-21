@@ -11,7 +11,7 @@ import { readdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
-import { error, info } from '@actions/core';
+import { info } from '@actions/core';
 import { expect } from '@playwright/test';
 import {
   getAvailablePort,
@@ -57,10 +57,12 @@ for (const { name, cwd } of examples) {
         test.beforeAll(async () => {
           if (commandMode === 'PRD') {
             rmSync(`${cwd}/dist`, { recursive: true, force: true });
-            await execAsync('pnpm run build', { cwd });
+            await execAsync('pnpm --silent run build', { cwd });
           }
           port = await getAvailablePort();
-          cp = runShell(`pnpm run ${script} --port ${port}`, cwd);
+          // `--silent` suppresses pnpm's own output (the `$ <command>` echo and
+          // lifecycle messages); the example's stdout/stderr still pass through.
+          cp = runShell(`pnpm --silent run ${script} --port ${port}`, cwd);
           cp.stdout?.on('data', (data) => {
             if (ignoreErrors.some((re) => re.test(`${data}`))) {
               return;
@@ -71,7 +73,9 @@ for (const { name, cwd } of examples) {
             if (ignoreErrors.some((re) => re.test(`${data}`))) {
               return;
             }
-            error(`stderr: ${data}`);
+            // Logged, not raised: tools warn on stderr (e.g. wrangler config
+            // notices) and the title assertion is what determines pass/fail.
+            info(`stderr: ${data}`);
           });
           await waitForPortReady(port);
         });
