@@ -11,7 +11,7 @@ export default async function HomePage() {
       <div className="flex h-full w-full flex-col items-center justify-center p-6">
         <div className="px-6">
           <a
-            href="https://github.com/wakujs/waku/tree/main/examples/03_demo/src"
+            href="https://github.com/wakujs/waku-examples/tree/main/fs-router/data-fetching/src"
             target="_blank"
             rel="noreferrer"
             className="whitespace-nowrap text-xs font-bold hover:underline sm:text-base"

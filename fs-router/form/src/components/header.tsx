@@ -7,7 +7,7 @@ export const Header = () => {
         <Link to="/">Waku form demo</Link>
       </h2>
       <a
-        href="https://github.com/wakujs/waku/tree/main/examples/06_form-demo"
+        href="https://github.com/wakujs/waku-examples/tree/main/fs-router/form"
         target="_blank"
         rel="noreferrer"
         className="text-sm hover:underline"

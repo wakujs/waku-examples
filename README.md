@@ -3,13 +3,13 @@
 A collection of [Waku](https://waku.gg) examples, grouped by the **Waku API** they
 use, since that is the choice that most shapes how an app is written:
 
-- [`fs-router/`](#fs-router) — file-system routing (the default for most apps)
-- [`create-pages/`](#create-pages) — programmatic routing with `createPages`
-- [`define-router/`](#define-router) — low-level routing with `unstable_defineRouter`
-- [`minimal-api/`](#minimal-api) — the low-level minimal RSC primitives
+- [`fs-router/`](#fs-router) - file-system routing (the default for most apps)
+- [`create-pages/`](#create-pages) - the low-level routing API (`createPages`)
+- [`define-router/`](#define-router) - custom routing with `unstable_defineRouter`
+- [`minimal-api/`](#minimal-api) - the low-level minimal RSC primitives
 
 If you are instead looking for a particular **topic** (styling, forms, state,
-deployment, …), jump to the [topic index](#by-topic).
+deployment, etc.), jump to the [topic index](#by-topic).
 
 ## By API
 
@@ -29,14 +29,15 @@ server entry); those marked _explicit_ provide a `src/waku.server.tsx` that call
 | [`vanilla-extract`](fs-router/vanilla-extract) | Styling with Vanilla Extract (compile-time CSS-in-JS) |
 | [`form`](fs-router/form) | Server actions and form handling |
 | [`jotai`](fs-router/jotai) | Global state with Jotai (`waku-jotai`) |
-| [`features`](fs-router/features) | Feature tour — layouts, slices, segments, API routes _(explicit)_ |
+| [`features`](fs-router/features) | Feature tour: layouts, slices, segments, API routes _(explicit)_ |
 | [`tanstack-router`](fs-router/tanstack-router) | Replace the client router with TanStack Router _(explicit)_ |
 | [`no-ssr`](fs-router/no-ssr) | Disable SSR for client-only rendering _(explicit)_ |
 | [`cloudflare`](fs-router/cloudflare) | Deploy to Cloudflare Workers _(explicit)_ |
 
 ### create-pages
 
-Programmatic routing via `createPages` from `waku/router/server`.
+The low-level routing API. `createPages` registers routes programmatically
+(pages, layouts, slices, and API routes) from `waku/router/server`.
 
 | Example | What it shows |
 | --- | --- |
