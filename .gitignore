@@ -1,0 +1,14 @@
+*~
+*.swp
+node_modules
+dist
+*.tsbuildinfo
+pages.gen.ts
+.cache
+.wrangler
+test-results
+playwright-report
+.env.local
+.vercel
+.netlify
+.DS_Store

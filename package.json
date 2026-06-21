@@ -1,0 +1,19 @@
+{
+  "name": "waku-examples",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A collection of Waku examples, organized by API",
+  "license": "MIT",
+  "packageManager": "pnpm@11.8.0",
+  "scripts": {
+    "e2e": "playwright test",
+    "e2e-dev": "playwright test --project=chromium-dev",
+    "e2e-prd": "playwright test --project=chromium-prd"
+  },
+  "devDependencies": {
+    "@actions/core": "^3.0.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.9.3"
+  }
+}
