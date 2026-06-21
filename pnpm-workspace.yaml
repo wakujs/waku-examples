@@ -1,0 +1,10 @@
+packages:
+  - 'fs-router/*'
+  - 'create-pages/*'
+  - 'define-router/*'
+  - 'minimal-api/*'
+  - '!**/dist'
+allowBuilds:
+  esbuild: false
+  sharp: false
+  workerd: false

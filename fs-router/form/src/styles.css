@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-*: initial;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-zen-maru-gothic: 'Zen Maru Gothic', serif;
+}
