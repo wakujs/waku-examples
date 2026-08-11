@@ -8,6 +8,7 @@ import {
   useMergeElements_UNSTABLE as useMergeElements,
 } from 'waku/minimal/client';
 
+// The minimal API intentionally leaves refetching to userland.
 const useRefetch = () => {
   const mergeElements = useMergeElements();
   return useCallback(
