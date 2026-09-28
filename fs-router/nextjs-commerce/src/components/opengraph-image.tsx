@@ -1,37 +1,64 @@
-// next/og's ImageResponse renders JSX to a PNG. Waku ships no equivalent, and
-// the endpoints that used it (app/opengraph-image.tsx and its per-route
-// variants) are API routes here.
-//
-// This returns an SVG, which needs no dependency and no font file, and which
-// every social crawler renders. For PNG, `satori` plus `@resvg/resvg-js` — the
-// two libraries ImageResponse itself is built on — work in a Waku API route
-// unchanged.
+import { readFile } from 'node:fs/promises';
+import { createRequire } from 'node:module';
+import { Resvg } from '@resvg/resvg-js';
+import satori from 'satori';
+import LogoIcon from './icons/logo';
 
-const escapeXml = (value: string) =>
-  value.replace(/[<>&'"]/g, (c) =>
-    c === '<'
-      ? '&lt;'
-      : c === '>'
-        ? '&gt;'
-        : c === '&'
-          ? '&amp;'
-          : c === "'"
-            ? '&apos;'
-            : '&quot;',
+// next/og's ImageResponse is satori (JSX to SVG) followed by resvg (SVG to
+// PNG), so this calls the two directly. The image has to be a PNG: social
+// crawlers do not render an SVG og:image. The font is Inter Bold, as in the
+// original, taken from @fontsource/inter because satori cannot read woff2. The
+// original's `tw` classes are written as styles: React's types have no `tw`.
+export async function opengraphImage(
+  title = process.env.SITE_NAME || 'Acme Store',
+) {
+  const font = await readFile(
+    createRequire(import.meta.url).resolve(
+      '@fontsource/inter/files/inter-latin-700-normal.woff',
+    ),
   );
 
-export function opengraphImage(title = process.env.SITE_NAME || 'Acme Store') {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#000000"/>
-  <rect x="520" y="175" width="160" height="160" rx="24" fill="none" stroke="#404040" stroke-width="2"/>
-  <path d="M600 232l24 42h-48z" fill="#ffffff"/>
-  <path d="M600 268l24 42h-48z" fill="#ffffff"/>
-  <text x="600" y="430" fill="#ffffff" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="64" font-weight="700" text-anchor="middle">${escapeXml(title)}</text>
-</svg>`;
+  const svg = await satori(
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%',
+        height: '100%',
+        backgroundColor: 'black',
+      }}
+    >
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: 160,
+          height: 160,
+          border: '1px solid #404040',
+          borderRadius: 24,
+        }}
+      >
+        <LogoIcon width="64" height="58" fill="white" />
+      </div>
+      <p
+        style={{ marginTop: 48, fontSize: 60, fontWeight: 700, color: 'white' }}
+      >
+        {title}
+      </p>
+    </div>,
+    {
+      width: 1200,
+      height: 630,
+      fonts: [{ name: 'Inter', data: font, style: 'normal', weight: 700 }],
+    },
+  );
 
-  return new Response(svg, {
+  return new Response(new Uint8Array(new Resvg(svg).render().asPng()), {
     headers: {
-      'content-type': 'image/svg+xml',
+      'content-type': 'image/png',
       'cache-control': 'public, max-age=3600',
     },
   });

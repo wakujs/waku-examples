@@ -68,9 +68,9 @@ response, and a redirect thrown in the layout does not stop the page from
 rendering its data:
 
 ```
-GET /dashboard                     -> 307  Location: /login
-GET /RSC/R/dashboard.txt           -> 200  22,507 bytes, every figure included   (layout check only)
-GET /RSC/R/dashboard.txt           -> 200  8,660 bytes, error slots, no data     (data-layer check)
+GET /dashboard                     -> 307  Location: /login?callbackUrl=%2Fdashboard
+GET /RSC/R/dashboard.txt           -> 200  22,532 bytes, every figure included   (layout check only)
+GET /RSC/R/dashboard.txt           -> 200  8,685 bytes, error slots, no data     (data-layer check)
 ```
 
 So the boundary is `requireSession()` at the top of every function in
@@ -94,9 +94,10 @@ supports reading pending cookies, and `auth()` checks it first.
 does not compile, and neither does `` `${pathname}?${params}` ``. The pagination
 component types its builder as `` `/dashboard/invoices?${string}` ``; `Search`,
 which is used on two routes, casts through `ComponentProps<typeof Link>['to']`
-because `waku/router` does not export that type. For the login callback URL the
-type error is a feature: it forces the target to be matched against a list of
-known routes, which is how you avoid an open redirect anyway.
+because `waku/router` does not export that type. The login callback URL is cast
+too, but only after `authenticate()` has checked that it is a dashboard path:
+anyone can write one into the query string, and following it unchecked is an
+open redirect.
 
 ## Upstream quirk carried over
 

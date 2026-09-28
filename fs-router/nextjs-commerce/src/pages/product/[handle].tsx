@@ -6,6 +6,7 @@ import { HIDDEN_PRODUCT_TAG } from "lib/constants";
 import { getProduct, getProductRecommendations } from "lib/shopify";
 import type { Image } from "lib/shopify/types";
 import { Link } from "lib/navigation";
+import { baseUrl } from "lib/utils";
 import { unstable_notFound as notFound } from "waku/router/server";
 import type { PageProps } from "waku/router";
 import { Suspense } from "react";
@@ -51,9 +52,12 @@ export default async function ProductPage({
         name="robots"
         content={indexable ? "index, follow" : "noindex, nofollow"}
       />
-      {product.featuredImage?.url ? (
-        <meta property="og:image" content={product.featuredImage.url} />
-      ) : null}
+      {/* The original uses the featured image. The fixture's images are SVG,
+          which social crawlers do not render, so this is the generated card. */}
+      <meta
+        property="og:image"
+        content={`${baseUrl}/opengraph-image?product=${encodeURIComponent(product.handle)}`}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

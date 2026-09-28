@@ -1,15 +1,19 @@
 import { getCollection, getCollectionProducts } from "lib/shopify";
 import type { PageProps } from "waku/router";
+import { unstable_notFound as notFound } from "waku/router/server";
 
 import Grid from "components/grid";
 import ProductGridItems from "components/layout/product-grid-items";
 import { defaultSort, sorting } from "lib/constants";
+import { baseUrl } from "lib/utils";
 
 export default async function CategoryPage({
   collection: handle,
   query,
 }: PageProps<"/search/[collection]">) {
   const collection = await getCollection(handle);
+  if (!collection) return notFound();
+
   const sort = new URLSearchParams(query).get("sort") ?? undefined;
   const { sortKey, reverse } =
     sorting.find((item) => item.slug === sort) || defaultSort;
@@ -22,15 +26,19 @@ export default async function CategoryPage({
   return (
     <section>
       <title>
-        {`${(collection?.seo?.title || collection?.title) ?? "Collection"} | ${process.env.SITE_NAME || "Acme Store"}`}
+        {`${collection.seo?.title || collection.title} | ${process.env.SITE_NAME || "Acme Store"}`}
       </title>
       <meta
         name="description"
         content={
-          collection?.seo?.description ||
-          collection?.description ||
-          `${collection?.title ?? handle} products`
+          collection.seo?.description ||
+          collection.description ||
+          `${collection.title} products`
         }
+      />
+      <meta
+        property="og:image"
+        content={`${baseUrl}/opengraph-image?collection=${encodeURIComponent(collection.handle)}`}
       />
       {products.length === 0 ? (
         <p className="py-3 text-lg">{`No products found in this collection`}</p>

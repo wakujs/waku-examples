@@ -1,5 +1,6 @@
 import Prose from "components/prose";
 import { getPage } from "lib/shopify";
+import { baseUrl } from "lib/utils";
 import { unstable_notFound as notFound } from "waku/router/server";
 import type { PageProps } from "waku/router";
 
@@ -18,6 +19,10 @@ export default async function Page({ page: handle }: PageProps<"/[page]">) {
         content={page.seo?.description || page.bodySummary}
       />
       <meta property="og:type" content="article" />
+      <meta
+        property="og:image"
+        content={`${baseUrl}/opengraph-image?page=${encodeURIComponent(page.handle)}`}
+      />
       <meta property="article:published_time" content={page.createdAt} />
       <meta property="article:modified_time" content={page.updatedAt} />
       <h1 className="mb-8 text-5xl font-bold">{page.title}</h1>

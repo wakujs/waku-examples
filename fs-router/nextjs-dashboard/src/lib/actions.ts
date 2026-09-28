@@ -134,15 +134,23 @@ export async function authenticate(
     return 'Invalid credentials.';
   }
 
-  // next-auth accepted any redirectTo string. Waku's redirect() is typed against
-  // the app's routes, which forces the callback URL to be matched against a
-  // known list — worth doing anyway, since an unchecked one is an open redirect.
-  const allowed = [
-    '/dashboard',
-    '/dashboard/invoices',
-    '/dashboard/customers',
-  ] as const;
   // 303 so a browser following the redirect without JavaScript issues a GET;
   // the default 307 would re-send the form POST to the destination.
-  redirect(allowed.find((route) => route === redirectTo) ?? '/dashboard', 303);
+  redirect(dashboardPath(redirectTo), 303);
 }
+
+// The callback URL comes from the login page's query string, so anyone can
+// write one. next-auth only followed it within its own origin; this only
+// follows a dashboard path, which is all the dashboard layout sends. The cast
+// is needed because redirect() is typed against the app's routes.
+const dashboardPath = (url: string) => {
+  try {
+    const { origin, pathname, search } = new URL(url, 'http://localhost');
+    if (origin === 'http://localhost' && /^\/dashboard(\/|$)/.test(pathname)) {
+      return `${pathname}${search}` as Parameters<typeof redirect>[0];
+    }
+  } catch {
+    // Not a URL at all.
+  }
+  return '/dashboard';
+};

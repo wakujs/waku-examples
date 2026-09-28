@@ -1,5 +1,9 @@
 import type { ReactNode } from 'react';
-import { unstable_redirect as redirect } from 'waku/router/server';
+import {
+  unstable_getRequest as getRequest,
+  unstable_parseRouterRequest as parseRouterRequest,
+  unstable_redirect as redirect,
+} from 'waku/router/server';
 import { auth } from '@/lib/session';
 import SideNav from '@/ui/dashboard/sidenav';
 
@@ -19,7 +23,7 @@ import SideNav from '@/ui/dashboard/sidenav';
 export default async function Layout({ children }: { children: ReactNode }) {
   const session = await auth();
   if (!session) {
-    redirect('/login');
+    redirect(loginUrl());
   }
 
   return (
@@ -31,6 +35,18 @@ export default async function Layout({ children }: { children: ReactNode }) {
     </div>
   );
 }
+
+// Like next-auth, pass the requested URL along as callbackUrl so the login form
+// can return there. parseRouterRequest() reports the route for both navigation
+// types; an action's request carries none.
+const loginUrl = () => {
+  const route = parseRouterRequest(getRequest());
+  if (route?.type !== 'route') {
+    return '/login';
+  }
+  const callbackUrl = route.query ? `${route.path}?${route.query}` : route.path;
+  return `/login?${new URLSearchParams({ callbackUrl })}` as const;
+};
 
 export const getConfig = async () => {
   return {

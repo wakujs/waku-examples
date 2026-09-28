@@ -28,7 +28,7 @@ from the four Next.js APIs listed below.
 | `app/search/[collection]/page.tsx` | `src/pages/search/[collection].tsx` |
 | `metadata` / `generateMetadata()` | tags rendered with the layout and the page, the page's overriding the layout's; with no title template, each page writes its full title |
 | `app/sitemap.ts`, `app/robots.ts` | `src/pages/_api/sitemap.xml.ts`, `_api/robots.txt.ts` |
-| `app/opengraph-image.tsx` (`next/og`) | `src/pages/_api/opengraph-image.ts`, returning SVG |
+| `app/opengraph-image.tsx` and its per-route variants (`next/og`) | `src/pages/_api/opengraph-image.ts`, one PNG endpoint keyed by the route's handle |
 | `app/api/revalidate/route.ts` | `src/pages/_api/api/revalidate.ts` — `_api` is stripped from the URL, so the extra `api/` keeps the webhook at `/api/revalidate` |
 | `app/error.tsx` | `<StorefrontErrorBoundary>` in the root layout |
 | `app/search/loading.tsx` | none: a `<Suspense>` above the page would keep its `<title>` out of the head |
@@ -66,9 +66,13 @@ headers, so a cookie written during the request is invisible to it. The jar in
   layout reads the cart cookie. Prerendering the catalogue would mean moving the
   cart into a [slice](https://waku.gg/#slices) so the rest of the page can stay
   static — the Waku equivalent of the partial prerendering the original enables.
-- `next/og`'s `ImageResponse` has no counterpart. The OG endpoint returns SVG,
-  which needs no dependency; `satori` + `@resvg/resvg-js` (what `ImageResponse`
-  is built on) work in a Waku API route if you need PNG.
+- `next/og`'s `ImageResponse` has no counterpart, so the OG endpoint calls
+  `satori` and `@resvg/resvg-js`, which is what `ImageResponse` does underneath.
+  It returns PNG because social crawlers do not render SVG, and `og:image` URLs
+  are absolute, built from `baseUrl` as the original's `metadataBase` built them.
+  Product pages point `og:image` at the endpoint rather than at the featured
+  image, which is an SVG in the fixture data. `waku.config.ts` has Node load
+  both libraries from `node_modules` instead of bundling them.
 - `next/form` did a client-side navigation on submit; a plain form does a full
   page load.
 - `tsconfig.json`'s `baseUrl` is removed in TypeScript 7, so the `lib/…` and
