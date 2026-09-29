@@ -1,6 +1,6 @@
 'use client';
 
-import type { ComponentProps } from 'react';
+import { useMemo, type ComponentProps } from 'react';
 import { Link as WakuLink, useRouter } from 'waku';
 
 // A compatibility layer for next/link and next/navigation.
@@ -29,7 +29,13 @@ export function Link({ href, prefetch: _prefetch, ...rest }: LinkProps) {
 
 export const usePathname = () => useRouter().path;
 
-export const useSearchParams = () => new URLSearchParams(useRouter().query);
+// next/navigation hands back the same object until the URL changes, and the
+// components rely on it: mobile-menu.tsx closes the menu in an effect keyed on
+// it, so a new object on every render would close the menu as it opens.
+export const useSearchParams = () => {
+  const { query } = useRouter();
+  return useMemo(() => new URLSearchParams(query), [query]);
+};
 
 export const useRouterCompat = () => {
   const router = useRouter();
