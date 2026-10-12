@@ -90,7 +90,7 @@ response. So `src/lib/cookie-jar.ts` opens an `AsyncLocalStorage` jar per reques
 That is not quite enough on its own. `redirect()` resolves server-side, so the
 destination renders *in the same request* — where `unstable_getHeaders()` still
 reports the cookies the browser sent, not the one just queued. Logging in would
-set the session and then bounce you back to `/login`. The jar therefore also
+set the session and then render the dashboard signed out. The jar therefore also
 supports reading pending cookies, and `auth()` checks it first.
 
 **Typed routes reject computed hrefs.** `redirect(formData.get('redirectTo'))`
