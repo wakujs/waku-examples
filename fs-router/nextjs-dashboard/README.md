@@ -42,7 +42,7 @@ to keep it on disk between runs.
 | `revalidatePath()` | nothing after `redirect()`, which renders fresh data; `unstable_rerenderRoute()` in an action that stays on the page |
 | `searchParams` prop (parsed) | `query` prop (the raw query string) |
 | `useSearchParams()`, `usePathname()`, `useRouter()` | one `useRouter()` with `path`, `query`, `push`, `replace` |
-| `middleware`/`proxy.ts` route protection | `requireSession()` in the data layer and actions, plus a redirect in `dashboard/_layout.tsx` — see below |
+| `middleware`/`proxy.ts` route protection | `src/middleware/auth.ts`, plus `requireSession()` in the data layer and actions — see below |
 | `next-auth` v5 | `src/lib/session.ts`: ~60 lines over `jose` |
 | `cookies().set()` | a cookie jar (`src/lib/cookie-jar.ts`) + `src/middleware/cookies.ts` |
 | `postgres` (hosted) | PGlite behind the same tagged-template `sql` (`src/lib/db.ts`) |
@@ -56,27 +56,30 @@ the server actions.
 
 ## The three things that needed real thought
 
-**Route protection is neither middleware nor a layout.** The original guards
-`/dashboard` in `proxy.ts`. Porting that check to Hono middleware that matches
-`c.req.path` *looks* right and fails open: a client-side navigation requests
-`/RSC/R/dashboard.txt`, not `/dashboard`. `unstable_parseRouterRequest` reads
-both as the same route, but it reports a server action as `{ type: 'action' }`,
-with no route to match, so middleware still cannot be the boundary. Moving the
-check into `dashboard/_layout.tsx` is not enough
-either — Waku renders the layout and the page as independent slots of one
-response, and a redirect thrown in the layout does not stop the page from
-rendering its data:
+**Route protection has to match routes, not urls.** The original guards
+`/dashboard` in `proxy.ts`. Hono middleware that matches `c.req.path` *looks*
+like the same thing and fails open: a client-side navigation requests
+`/RSC/R/dashboard.txt`, not `/dashboard`. `src/middleware/auth.ts` matches with
+`unstable_parseRouterRequest`, which reads both as the same route, and builds the
+login url with `unstable_formatRouterRequest`, so a navigation gets the login
+page's payload rather than its HTML:
 
 ```
-GET /dashboard                     -> 307  Location: /login?callbackUrl=%2Fdashboard
-GET /RSC/R/dashboard.txt           -> 200  22,532 bytes, every figure included   (layout check only)
-GET /RSC/R/dashboard.txt           -> 200  8,685 bytes, error slots, no data     (data-layer check)
+GET /dashboard             -> 303  Location: /login?callbackUrl=%2Fdashboard
+GET /RSC/R/dashboard.txt   -> 303  Location: /RSC/R/login.txt?query=callbackUrl%3D%252Fdashboard
 ```
 
-So the boundary is `requireSession()` at the top of every function in
-`src/lib/data.ts`, every mutation in `src/lib/actions.ts`, and both API routes.
-The layout keeps its redirect, but only so that a signed-out visitor lands on the
-login page instead of an error.
+Like `proxy.ts`, this is an optimistic check on the cookie, not the
+authorization boundary: a server action reports as `{ type: 'action' }`, with no
+route to match, and an API route is a request of its own. So the boundary is
+`requireSession()` at the top of every function in `src/lib/data.ts`, every
+mutation in `src/lib/actions.ts`, and both API routes.
+
+A redirect in `dashboard/_layout.tsx` would be neither. Waku renders the layout
+and the page as independent slots of one response, so a redirect thrown in the
+layout does not stop the page from rendering its data. Before `data.ts` checked
+for itself, a signed-out `/RSC/R/dashboard.txt` carried every figure on the page
+(22,532 bytes).
 
 **Setting a cookie takes a round trip through middleware.** Waku has no
 `cookies().set()`. Server code can read request headers; only middleware owns the

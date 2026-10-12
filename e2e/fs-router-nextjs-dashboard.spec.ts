@@ -30,10 +30,23 @@ test.describe('fs-router/nextjs-dashboard', () => {
 
   test('keeps signed-out requests away from the data', async ({ request }) => {
     const res = await request.get(url('/dashboard'), { maxRedirects: 0 });
-    expect(res.status()).toBe(307);
+    expect(res.status()).toBe(303);
     expect(res.headers()['location']).toBe('/login?callbackUrl=%2Fdashboard');
     const rsc = await request.get(url('/RSC/R/dashboard/customers.txt'));
     expect(await rsc.text()).not.toContain('Evil Rabbit');
+  });
+
+  test('sends a navigation to the login page once the session is gone', async ({
+    page,
+    context,
+  }) => {
+    await logIn(page, '/dashboard');
+    await context.clearCookies();
+    await page.getByRole('link', { name: 'Customers' }).click();
+    await expect(page).toHaveURL(
+      url('/login?callbackUrl=%2Fdashboard%2Fcustomers'),
+    );
+    await expect(page.getByText('Evil Rabbit')).toHaveCount(0);
   });
 
   test('rejects wrong credentials', async ({ page }) => {
