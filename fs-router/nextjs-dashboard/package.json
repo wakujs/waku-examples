@@ -19,12 +19,12 @@
     "cookie": "^2.0.1",
     "hono": "^4.13.9",
     "jose": "^6.2.1",
-    "react": "~19.3.0",
-    "react-dom": "~19.3.0",
+    "react": "~19.3.1",
+    "react-dom": "~19.3.1",
     "react-error-boundary": "^6.0.0",
-    "react-server-dom-webpack": "~19.3.0",
+    "react-server-dom-webpack": "~19.3.1",
     "use-debounce": "^10.0.4",
-    "waku": "1.0.0-rc.3",
+    "waku": "1.0.0-rc.4",
     "zod": "^3.25.17"
   },
   "devDependencies": {

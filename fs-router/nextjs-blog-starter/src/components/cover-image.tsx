@@ -1,5 +1,6 @@
 import cn from "classnames";
 import { Link } from "waku";
+import { getPostHref } from "@/lib/routes";
 
 type Props = {
   title: string;
@@ -22,7 +23,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   return (
     <div className="sm:mx-0">
       {slug ? (
-        <Link to={{ to: "/posts/[slug]", params: { slug } }} aria-label={title}>
+        <Link to={getPostHref({ params: { slug } })} aria-label={title}>
           {image}
         </Link>
       ) : (

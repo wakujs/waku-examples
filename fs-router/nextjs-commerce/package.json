@@ -18,13 +18,13 @@
     "clsx": "^2.1.1",
     "cookie": "^2.0.1",
     "hono": "^4.13.9",
-    "react": "~19.3.0",
-    "react-dom": "~19.3.0",
+    "react": "~19.3.1",
+    "react-dom": "~19.3.1",
     "react-error-boundary": "^6.0.0",
-    "react-server-dom-webpack": "~19.3.0",
+    "react-server-dom-webpack": "~19.3.1",
     "satori": "^0.33.5",
     "sonner": "^2.0.8",
-    "waku": "1.0.0-rc.3"
+    "waku": "1.0.0-rc.4"
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
