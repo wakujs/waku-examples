@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import * as cookie from 'cookie';
 import { jwtVerify, SignJWT } from 'jose';
 import { getEnv } from 'waku';
-import { unstable_getHeaders as getHeaders } from 'waku/router/server';
+import { getRequest } from 'waku/router/server';
 import { queueSetCookie, readPendingCookie } from './cookie-jar';
 import { sql } from './db';
 import type { User } from './definitions';
@@ -103,7 +103,7 @@ export const auth = async (): Promise<Session | null> => {
   if (pending !== undefined) {
     return verifySessionToken(pending || undefined);
   }
-  const cookies = cookie.parseCookie(getHeaders()['cookie'] ?? '');
+  const cookies = cookie.parseCookie(getRequest().headers.get('cookie') ?? '');
   return verifySessionToken(cookies[SESSION_COOKIE]);
 };
 

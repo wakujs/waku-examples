@@ -1,5 +1,5 @@
 import * as cookie from 'cookie';
-import { unstable_getHeaders as getHeaders } from 'waku/router/server';
+import { getRequest } from 'waku/router/server';
 import { readPendingCookie, setCookie } from '../cookie-jar';
 import { HIDDEN_PRODUCT_TAG } from '../constants';
 import {
@@ -12,19 +12,6 @@ import {
 } from './fixture-data';
 import type { Cart, CartItem, Collection, Menu, Page, Product } from './types';
 
-// The Shopify client, with the same exported surface the components already
-// import. Three things differ from the Next.js original:
-//
-//   1. `"use cache"` + cacheTag/cacheLife/revalidateTag are gone. Waku has no
-//      framework cache: static pages are built once and dynamic ones run per
-//      request. Add caching deliberately (waku-cache) if you measure a need.
-//   2. `cookies()` becomes unstable_getHeaders() for reads and the cookie jar
-//      in lib/cookie-jar.ts for writes.
-//   3. NextRequest/NextResponse in revalidate() become Request/Response.
-//
-// The data itself comes from ./fixture-data so the example runs without a
-// Shopify store. A real migration keeps its own fetch layer unchanged.
-
 const CART_COOKIE = 'cartId';
 
 const readCookie = (name: string) => {
@@ -32,7 +19,7 @@ const readCookie = (name: string) => {
   if (pending !== undefined) {
     return pending;
   }
-  return cookie.parseCookie(getHeaders()['cookie'] ?? '')[name];
+  return cookie.parseCookie(getRequest().headers.get('cookie') ?? '')[name];
 };
 
 // Carts live in memory for the lifetime of the server process, keyed by the id
