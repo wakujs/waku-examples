@@ -18,10 +18,6 @@ export const runWithCookieJar = <T>(fn: () => Promise<T>): Promise<T> =>
 
 export const getCookieJar = () => storage.getStore();
 
-// Reads back a cookie queued earlier in this same request. Without this, a
-// server action that logs a user in and redirects cannot be followed by a render
-// that sees the session: unstable_getHeaders() only ever reports the cookies the
-// browser sent. Next.js's cookies() store reads through pending writes the same way.
 export const readPendingCookie = (name: string): string | undefined => {
   const jar = storage.getStore();
   if (!jar) {

@@ -1,6 +1,11 @@
 import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
 import { Link } from 'waku';
+import { unstable_createRouteHref as createRouteHref } from 'waku/router';
 import { deleteInvoice } from '@/lib/actions';
+
+const getEditInvoiceHref = createRouteHref({
+  path: '/dashboard/invoices/[id]/edit',
+});
 
 export function CreateInvoice() {
   return (
@@ -17,7 +22,7 @@ export function CreateInvoice() {
 export function UpdateInvoice({ id }: { id: string }) {
   return (
     <Link
-      to={{ to: '/dashboard/invoices/[id]/edit', params: { id } }}
+      to={getEditInvoiceHref({ params: { id } })}
       className="rounded-md border p-2 hover:bg-gray-100"
     >
       <PencilIcon className="w-5" />
