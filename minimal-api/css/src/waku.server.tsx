@@ -29,7 +29,7 @@ export default adapter({
     }
   },
   handleBuild: async ({
-    rscPath2pathname,
+    rscPathToFileName,
     renderRsc,
     renderHtml,
     generateFile,
@@ -43,7 +43,7 @@ export default adapter({
       ),
     });
     const [stream1, stream2] = stream.tee();
-    await generateFile(rscPath2pathname(rscPath), stream1);
+    await generateFile(rscPathToFileName(rscPath), stream1);
     const res = await renderHtml(stream2, <Slot id="App" />, { rscPath });
     await generateFile('index.html', res.body!);
   },

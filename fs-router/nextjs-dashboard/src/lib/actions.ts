@@ -2,8 +2,8 @@
 
 import { z } from 'zod';
 import {
-  unstable_redirect as redirect,
-  unstable_rerenderRoute as rerenderRoute,
+  requestRedirect,
+  requestRefresh,
 } from 'waku/router/server';
 import { sql } from './db';
 import { requireSession, signIn } from './session';
@@ -71,7 +71,8 @@ export async function createInvoice(prevState: State, formData: FormData) {
 
   // No revalidatePath(): Waku caches nothing, so the redirect below renders the
   // invoices page with fresh data.
-  redirect('/dashboard/invoices', 303);
+  requestRedirect('/dashboard/invoices', 303);
+  return {};
 }
 
 export async function updateInvoice(
@@ -106,13 +107,14 @@ export async function updateInvoice(
     return { message: 'Database Error: Failed to Update Invoice.' };
   }
 
-  redirect('/dashboard/invoices', 303);
+  requestRedirect('/dashboard/invoices', 303);
+  return {};
 }
 
 export async function deleteInvoice(id: string) {
   await requireSession();
   await sql`DELETE FROM invoices WHERE id = ${id}`;
-  rerenderRoute();
+  requestRefresh();
 }
 
 export async function authenticate(
@@ -136,18 +138,18 @@ export async function authenticate(
 
   // 303 so a browser following the redirect without JavaScript issues a GET;
   // the default 307 would re-send the form POST to the destination.
-  redirect(dashboardPath(redirectTo), 303);
+  requestRedirect(dashboardPath(redirectTo), 303);
 }
 
 // The callback URL comes from the login page's query string, so anyone can
 // write one. next-auth only followed it within its own origin; this only
-// follows a dashboard path, which is all the dashboard layout sends. The cast
-// is needed because redirect() is typed against the app's routes.
+// follows a dashboard path, which is all the auth middleware sends. The cast
+// is needed because requestRedirect() is typed against the app's routes.
 const dashboardPath = (url: string) => {
   try {
     const { origin, pathname, search } = new URL(url, 'http://localhost');
     if (origin === 'http://localhost' && /^\/dashboard(\/|$)/.test(pathname)) {
-      return `${pathname}${search}` as Parameters<typeof redirect>[0];
+      return `${pathname}${search}` as Parameters<typeof requestRedirect>[0];
     }
   } catch {
     // Not a URL at all.

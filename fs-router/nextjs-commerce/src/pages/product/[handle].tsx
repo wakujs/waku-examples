@@ -7,7 +7,7 @@ import { getProduct, getProductRecommendations } from "lib/shopify";
 import type { Image } from "lib/shopify/types";
 import { Link } from "lib/navigation";
 import { baseUrl } from "lib/utils";
-import { unstable_notFound as notFound } from "waku/router/server";
+import { requestNotFound } from "waku/router/server";
 import type { PageProps } from "waku/router";
 import { Suspense } from "react";
 
@@ -16,7 +16,10 @@ export default async function ProductPage({
 }: PageProps<"/product/[handle]">) {
   const product = await getProduct(handle);
 
-  if (!product) return notFound();
+  if (!product) {
+    requestNotFound();
+    return null;
+  }
 
   // generateMetadata() has no counterpart: the tags are rendered with the page,
   // from data it has already fetched.

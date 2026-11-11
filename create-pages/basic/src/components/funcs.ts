@@ -1,11 +1,19 @@
 'use server';
 
-import { unstable_rerenderRoute } from 'waku/router/server';
+import { requestRedirect } from 'waku/router/server';
 
-const PAGES = ['/bar', '/baz', '/nested/qux', '/nested/aaa', '/nested/bbb'];
+const PAGES = [
+  '/bar',
+  '/baz',
+  '/nested/qux',
+  '/nested/aaa',
+  '/nested/bbb',
+] as const;
 
-export const jump = async () => {
-  const page = PAGES[Math.floor(Math.random() * PAGES.length)] as string;
+// A redirect to the page it is called from would be a navigation loop.
+export const jump = async (currentPath: string) => {
+  const pages = PAGES.filter((page) => page !== currentPath);
+  const page = pages[Math.floor(Math.random() * pages.length)]!;
   console.log(`Jumping to ${page}`);
-  unstable_rerenderRoute(page);
+  requestRedirect(page);
 };

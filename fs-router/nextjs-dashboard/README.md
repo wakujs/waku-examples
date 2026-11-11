@@ -37,9 +37,9 @@ to keep it on disk between runs.
 | `loading.tsx` | the `<Suspense>` fallbacks that were already there |
 | `error.tsx` | an explicit `<ErrorBoundary>` (`react-error-boundary`) around the part of the tree it covered |
 | `not-found.tsx`, per segment | one `src/pages/404.tsx` for the whole app |
-| `notFound()` | `unstable_notFound()` from `waku/router/server` |
-| `redirect()` | `unstable_redirect()` — typed against the app's routes |
-| `revalidatePath()` | nothing after `redirect()`, which renders fresh data; `unstable_rerenderRoute()` in an action that stays on the page |
+| `notFound()` | `requestNotFound()` from `waku/router/server`, then `return` |
+| `redirect()` | `requestRedirect()`, then `return` — typed against the app's routes |
+| `revalidatePath()` | nothing after `requestRedirect()`, which renders fresh data; `requestRefresh()` in an action that stays on the page |
 | `searchParams` prop (parsed) | `query` prop (the raw query string) |
 | `useSearchParams()`, `usePathname()`, `useRouter()` | one `useRouter()` with `path`, `query`, `push`, `replace` |
 | `middleware`/`proxy.ts` route protection | `src/middleware/auth.ts`, plus `requireSession()` in the data layer and actions — see below |
@@ -87,13 +87,14 @@ response. So `src/lib/cookie-jar.ts` opens an `AsyncLocalStorage` jar per reques
 `signIn()`/`signOut()` drop `Set-Cookie` strings into it, and
 `src/middleware/cookies.ts` attaches them on the way out.
 
-That is not quite enough on its own. `redirect()` resolves server-side, so the
-destination renders *in the same request* — where `getRequest().headers` still
-reports the cookies the browser sent, not the one just queued. Logging in would
-set the session and then render the dashboard signed out. The jar therefore also
+A redirect needs nothing more: the browser applies the cookie from the action's
+response and follows `requestRedirect()` in a new request, and without
+JavaScript the form's 303 does the same. Code that reads the session later in
+the same request, such as a route rendered by `requestRefresh()`, still sees the
+cookies the browser sent through `getRequest().headers`. The jar therefore also
 supports reading pending cookies, and `auth()` checks it first.
 
-**Typed routes reject computed hrefs.** `redirect(formData.get('redirectTo'))`
+**Typed routes reject computed hrefs.** `requestRedirect(formData.get('redirectTo'))`
 does not compile, and neither does `` `${pathname}?${params}` ``. The pagination
 component types its builder as `` `/dashboard/invoices?${string}` ``; `Search`,
 which is used on two routes, casts through `ComponentProps<typeof Link>['to']`

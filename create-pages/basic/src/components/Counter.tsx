@@ -18,7 +18,7 @@ export const Counter = () => {
         <Link to="/">Go to Home</Link>
       </p>
       <p>
-        <button onClick={() => startTransition(jump)}>
+        <button onClick={() => startTransition(() => jump(path))}>
           Jump to random page{isPending && '...'}
         </button>
       </p>

@@ -1,5 +1,5 @@
 import type { PageProps } from 'waku/router';
-import { unstable_notFound as notFound } from 'waku/router/server';
+import { requestNotFound } from 'waku/router/server';
 import { fetchCustomers, fetchInvoiceById } from '@/lib/data';
 import Breadcrumbs from '@/ui/invoices/breadcrumbs';
 import Form from '@/ui/invoices/edit-form';
@@ -14,8 +14,9 @@ export default async function Page({
 
   if (!invoice) {
     // Next.js resolves this against the nearest not-found.tsx; Waku answers
-    // every notFound() with src/pages/404.tsx.
-    notFound();
+    // every requestNotFound() with src/pages/404.tsx.
+    requestNotFound();
+    return null;
   }
 
   return (

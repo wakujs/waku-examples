@@ -30,8 +30,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -61,8 +61,8 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@tailwindcss/vite':
         specifier: 4.3.3
@@ -92,8 +92,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -117,8 +117,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -145,8 +145,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -161,8 +161,8 @@ importers:
   fs-router/basic:
     dependencies:
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       react:
         specifier: ~19.3.1
         version: 19.3.1
@@ -173,8 +173,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -204,8 +204,8 @@ importers:
   fs-router/basic-js:
     dependencies:
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       react:
         specifier: ~19.3.1
         version: 19.3.1
@@ -216,8 +216,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -238,8 +238,8 @@ importers:
   fs-router/cloudflare:
     dependencies:
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       react:
         specifier: ~19.3.1
         version: 19.3.1
@@ -250,8 +250,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
       wrangler:
         specifier: ^4.141.0
         version: 4.141.0(@types/node@26.6.3)
@@ -302,8 +302,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -336,8 +336,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -376,8 +376,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -401,8 +401,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -444,11 +444,11 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
       waku-jotai:
         specifier: ^0.8.0
-        version: 0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2))
+        version: 0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2))
     devDependencies:
       '@rolldown/plugin-babel':
         specifier: ^0.2.4
@@ -505,8 +505,8 @@ importers:
         specifier: ^16.0.1
         version: 16.0.1
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@1.21.7)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@1.21.7)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -551,8 +551,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       react:
         specifier: ~19.3.1
         version: 19.3.1
@@ -572,8 +572,8 @@ importers:
         specifier: ^2.0.8
         version: 2.0.8(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@tailwindcss/container-queries':
         specifier: ^0.1.1
@@ -624,8 +624,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       jose:
         specifier: ^6.2.1
         version: 6.2.12
@@ -645,8 +645,8 @@ importers:
         specifier: ^10.0.4
         version: 10.1.1(react@19.3.1)
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2)
       zod:
         specifier: ^3.25.17
         version: 3.25.76
@@ -688,8 +688,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -713,8 +713,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@tailwindcss/vite':
         specifier: 4.3.3
@@ -747,8 +747,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@stylexjs/unplugin':
         specifier: ^0.19.1
@@ -781,8 +781,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -809,8 +809,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -834,8 +834,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -859,8 +859,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -884,8 +884,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
 
   minimal-api/cookies:
     dependencies:
@@ -893,8 +893,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.17
+        version: 4.13.17
       react:
         specifier: ~19.3.1
         version: 19.3.1
@@ -905,8 +905,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/node':
         specifier: ^26.6.3
@@ -936,8 +936,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -958,8 +958,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -986,8 +986,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(react@19.3.1)
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1011,8 +1011,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1039,11 +1039,11 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
       waku-jotai:
         specifier: ^0.8.0
-        version: 0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2))
+        version: 0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2))
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1067,8 +1067,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1092,8 +1092,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1117,8 +1117,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -1142,8 +1142,8 @@ importers:
         specifier: ~19.3.1
         version: 19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2))
       waku:
-        specifier: 1.0.0-rc.4
-        version: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+        specifier: 1.0.0-rc.5
+        version: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
     devDependencies:
       '@types/react':
         specifier: ^19.3.0
@@ -2816,8 +2816,8 @@ packages:
   dlv@1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
 
-  dotenv@18.0.5:
-    resolution: {integrity: sha512-aBrGvt6KhjxbEnatqMWOMidftwsrCiCvqh1yNIGB9QyF0J+VcWkKDMsvYOEm7ZS82oiV+BT1sTOtIlAmUlTpwQ==}
+  dotenv@18.0.10:
+    resolution: {integrity: sha512-89FAA1xchzK2mxVWdr5F/0rldwiueXs6zJM86rO66EzekR1iBdiXRthyG+m5GvkJaFH3C2LESzamTkgndmLT2A==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -2993,8 +2993,8 @@ packages:
     resolution: {integrity: sha512-Ox1pJVrDCyGHMG9CFg1tmrRUMRPRsAWYc/PinY0XzJU4K7y7vjNoLKIQ7BR5UJMCxNN8EM1MNDmHWA/B3aZUuw==}
     engines: {node: '>=6'}
 
-  hono@4.13.9:
-    resolution: {integrity: sha512-7dMkQmZoC4E6F7AtaQSPhlWAdnBti+j7rreMZl8QB4jFiEhP9TWbGWUMi8WYzBCgmgulxuvLQupKqo+Co6Omyg==}
+  hono@4.13.17:
+    resolution: {integrity: sha512-vZIcbkvjOR5hHRWERbGkr8fGfF0GGM1ooYkuH448iO3b2AdVEr3AXZSw4Z3Kn+1L5z0CVoVeyV29VGYmFh05kQ==}
     engines: {node: '>=16.9.0'}
 
   html-void-elements@3.0.0:
@@ -3277,9 +3277,6 @@ packages:
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
-
-  magic-string@1.4.2:
-    resolution: {integrity: sha512-vG+rjFRj1PqdIBozIxAGMjPlOhaVe+GXpbttY/iSK7rGcJRMlwNJO7dcUwmUqkymsFLJiNGI06t4D7Fr7yRC9g==}
 
   magic-string@1.4.3:
     resolution: {integrity: sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==}
@@ -3994,8 +3991,8 @@ packages:
       react: '>=19.0.0'
       waku: '>=1.0.0-rc.4'
 
-  waku@1.0.0-rc.4:
-    resolution: {integrity: sha512-Ge931+rWvd2Js2KdpuTpbrJ9SJXRfftcsQyTA5noGUzMtS3wGLLtd0B2EqmiHgCWgEOkPPwIkeAyx9FyvA5p0w==}
+  waku@1.0.0-rc.5:
+    resolution: {integrity: sha512-0MdnqySRQNu857FHR41ZBrmvcalFvNbcZ82xZwm3xzfdTzcbHm3zRejiGgnjZcHVwiI/VLqNk6TpVu0ZhEaVAQ==}
     engines: {node: ^26.0.0 || ^24.0.0 || ^22.15.0}
     hasBin: true
     peerDependencies:
@@ -4465,9 +4462,9 @@ snapshots:
     dependencies:
       react: 19.3.1
 
-  '@hono/node-server@2.1.5(hono@4.13.9)':
+  '@hono/node-server@2.1.5(hono@4.13.17)':
     dependencies:
-      hono: 4.13.9
+      hono: 4.13.17
 
   '@img/colour@1.1.0': {}
 
@@ -5163,7 +5160,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       es-module-lexer: 2.3.2
       estree-walker: 3.0.3
-      magic-string: 1.4.2
+      magic-string: 1.4.3
       obug: 3.0.0
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
@@ -5180,7 +5177,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       es-module-lexer: 2.3.2
       estree-walker: 3.0.3
-      magic-string: 1.4.2
+      magic-string: 1.4.3
       obug: 3.0.0
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
@@ -5197,7 +5194,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.1
       es-module-lexer: 2.3.2
       estree-walker: 3.0.3
-      magic-string: 1.4.2
+      magic-string: 1.4.3
       obug: 3.0.0
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
@@ -5473,7 +5470,7 @@ snapshots:
 
   dlv@1.1.3: {}
 
-  dotenv@18.0.5: {}
+  dotenv@18.0.10: {}
 
   electron-to-chromium@1.5.439: {}
 
@@ -5681,7 +5678,7 @@ snapshots:
 
   hex-rgb@4.3.0: {}
 
-  hono@4.13.9: {}
+  hono@4.13.17: {}
 
   html-void-elements@3.0.0: {}
 
@@ -5875,10 +5872,6 @@ snapshots:
       yallist: 3.1.1
 
   magic-string@0.30.21:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.6.0
-
-  magic-string@1.4.2:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
@@ -6764,19 +6757,19 @@ snapshots:
     optionalDependencies:
       vite: 8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)
 
-  waku-jotai@0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)):
+  waku-jotai@0.8.0(jotai@3.0.0(@types/react@19.3.0)(react@19.3.1))(react@19.3.1)(waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)):
     dependencies:
       jotai: 3.0.0(@types/react@19.3.0)(react@19.3.1)
       react: 19.3.1
-      waku: 1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
+      waku: 1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2)
 
-  waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@1.21.7)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2):
+  waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@1.21.7)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2):
     dependencies:
-      '@hono/node-server': 2.1.5(hono@4.13.9)
+      '@hono/node-server': 2.1.5(hono@4.13.17)
       '@vitejs/plugin-react': 6.1.1(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2))
       '@vitejs/plugin-rsc': 0.5.35(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@1.21.7)(terser@5.51.2))
-      dotenv: 18.0.5
-      hono: 4.13.9
+      dotenv: 18.0.10
+      hono: 4.13.17
       magic-string: 1.4.3
       picocolors: 1.1.1
       react: 19.3.1
@@ -6801,13 +6794,13 @@ snapshots:
       - tsx
       - yaml
 
-  waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2):
+  waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(terser@5.51.2):
     dependencies:
-      '@hono/node-server': 2.1.5(hono@4.13.9)
+      '@hono/node-server': 2.1.5(hono@4.13.17)
       '@vitejs/plugin-react': 6.1.1(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))
       '@vitejs/plugin-rsc': 0.5.35(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)(postcss@8.5.28)))(react@19.3.1)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))
-      dotenv: 18.0.5
-      hono: 4.13.9
+      dotenv: 18.0.10
+      hono: 4.13.17
       magic-string: 1.4.3
       picocolors: 1.1.1
       react: 19.3.1
@@ -6832,13 +6825,13 @@ snapshots:
       - tsx
       - yaml
 
-  waku@1.0.0-rc.4(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2):
+  waku@1.0.0-rc.5(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(@types/node@26.6.3)(babel-plugin-react-compiler@1.0.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(terser@5.51.2):
     dependencies:
-      '@hono/node-server': 2.1.5(hono@4.13.9)
+      '@hono/node-server': 2.1.5(hono@4.13.17)
       '@vitejs/plugin-react': 6.1.1(@rolldown/plugin-babel@0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.11)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2)))(babel-plugin-react-compiler@1.0.0)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))
       '@vitejs/plugin-rsc': 0.5.35(react-dom@19.3.1(react@19.3.1))(react-server-dom-webpack@19.3.1(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(webpack@5.107.2(esbuild@0.28.2)))(react@19.3.1)(vite@8.3.1(@types/node@26.6.3)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.51.2))
-      dotenv: 18.0.5
-      hono: 4.13.9
+      dotenv: 18.0.10
+      hono: 4.13.17
       magic-string: 1.4.3
       picocolors: 1.1.1
       react: 19.3.1
