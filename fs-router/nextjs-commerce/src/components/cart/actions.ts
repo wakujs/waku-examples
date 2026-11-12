@@ -8,10 +8,7 @@ import {
   setCartCookie,
   updateCart,
 } from "lib/shopify";
-import {
-  unstable_redirect as redirect,
-  unstable_rerenderRoute as rerenderRoute,
-} from "waku/router/server";
+import { requestRedirect, requestRefresh } from "waku/router/server";
 
 export async function addItem(
   prevState: any,
@@ -23,7 +20,7 @@ export async function addItem(
 
   try {
     await addToCart([{ merchandiseId: selectedVariantId, quantity: 1 }]);
-    rerenderRoute();
+    requestRefresh();
   } catch (e) {
     return "Error adding item to cart";
   }
@@ -43,7 +40,7 @@ export async function removeItem(prevState: any, merchandiseId: string) {
 
     if (lineItem && lineItem.id) {
       await removeFromCart([lineItem.id]);
-      rerenderRoute();
+      requestRefresh();
     } else {
       return "Item not found in cart";
     }
@@ -89,7 +86,7 @@ export async function updateItemQuantity(
       await addToCart([{ merchandiseId, quantity }]);
     }
 
-    rerenderRoute();
+    requestRefresh();
   } catch (e) {
     console.error(e);
     return "Error updating item quantity";
@@ -98,7 +95,7 @@ export async function updateItemQuantity(
 
 export async function redirectToCheckout() {
   let cart = await getCart();
-  redirect(cart!.checkoutUrl as never, 303);
+  requestRedirect(cart!.checkoutUrl as never, 303);
 }
 
 export async function createCartAndSetCookie() {

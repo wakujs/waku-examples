@@ -38,7 +38,7 @@ export default adapter({
   },
   handleBuild: async ({
     renderRsc,
-    rscPath2pathname,
+    rscPathToFileName,
     generateFile,
     generateDefaultHtml,
   }) => {
@@ -46,12 +46,12 @@ export default adapter({
       App: <App name="Waku" />,
       InnerApp: <InnerApp count={0} />,
     });
-    await generateFile(rscPath2pathname(''), body);
+    await generateFile(rscPathToFileName(''), body);
     for (const count of [1, 2, 3, 4, 5]) {
       const innerBody = await renderRsc({
         InnerApp: <InnerApp count={count} />,
       });
-      await generateFile(rscPath2pathname(`InnerApp=${count}`), innerBody);
+      await generateFile(rscPathToFileName(`InnerApp=${count}`), innerBody);
     }
     await generateDefaultHtml('index.html');
     await generateDefaultHtml('no-ssr/index.html');

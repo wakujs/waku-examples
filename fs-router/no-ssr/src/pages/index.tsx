@@ -30,6 +30,6 @@ const getData = async () => {
 export const getConfig = async () => {
   return {
     render: 'static',
-    unstable_disableSSR: true,
+    unstable_noSsr: true,
   } as const;
 };

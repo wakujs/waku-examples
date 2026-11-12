@@ -24,7 +24,7 @@ pnpm build && pnpm start
 | `generateStaticParams()` | `staticPaths` in the page's `getConfig()` |
 | (implicitly static) | `render: 'static'` in `getConfig()`, stated per page and layout |
 | `params: Promise<{ slug }>` | `slug` arrives as a plain prop, typed by `PageProps<'/posts/[slug]'>` |
-| `notFound()` from `next/navigation` | `unstable_notFound()` from `waku/router/server` |
+| `notFound()` from `next/navigation` | nothing: the page is static and `staticPaths` lists every post, so an unknown slug is already a 404 |
 | `next/link` `<Link href>` | `<Link to>` from `waku` |
 | `next/image` | plain `<img>` — Waku has no image component |
 | `next/font/google` | `@fontsource/inter`, imported from `globals.css` |

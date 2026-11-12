@@ -1,13 +1,16 @@
 import Prose from "components/prose";
 import { getPage } from "lib/shopify";
 import { baseUrl } from "lib/utils";
-import { unstable_notFound as notFound } from "waku/router/server";
+import { requestNotFound } from "waku/router/server";
 import type { PageProps } from "waku/router";
 
 export default async function Page({ page: handle }: PageProps<"/[page]">) {
   const page = await getPage(handle);
 
-  if (!page) return notFound();
+  if (!page) {
+    requestNotFound();
+    return null;
+  }
 
   return (
     <>

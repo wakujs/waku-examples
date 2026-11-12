@@ -38,11 +38,11 @@ export default adapter({
   handleBuild: async ({
     renderRsc,
     renderHtml,
-    rscPath2pathname,
+    rscPathToFileName,
     generateFile,
   }) => {
     const body = await renderRsc({ App: <App name="Waku" /> });
-    await generateFile(rscPath2pathname(''), body);
+    await generateFile(rscPathToFileName(''), body);
     const res = await renderHtml(
       await renderRsc({ App: <App name="Waku" /> }),
       <Slot id="App" />,

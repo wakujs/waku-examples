@@ -1,6 +1,6 @@
 import { getCollection, getCollectionProducts } from "lib/shopify";
 import type { PageProps } from "waku/router";
-import { unstable_notFound as notFound } from "waku/router/server";
+import { requestNotFound } from "waku/router/server";
 
 import Grid from "components/grid";
 import ProductGridItems from "components/layout/product-grid-items";
@@ -12,7 +12,10 @@ export default async function CategoryPage({
   query,
 }: PageProps<"/search/[collection]">) {
   const collection = await getCollection(handle);
-  if (!collection) return notFound();
+  if (!collection) {
+    requestNotFound();
+    return null;
+  }
 
   const sort = new URLSearchParams(query).get("sort") ?? undefined;
   const { sortKey, reverse } =

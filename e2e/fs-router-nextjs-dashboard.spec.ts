@@ -72,7 +72,10 @@ test.describe('fs-router/nextjs-dashboard', () => {
         .getByRole('paragraph'),
     ).toHaveText('6');
     await page.getByRole('link', { name: 'Customers' }).click();
-    await expect(page.getByText('Evil Rabbit').first()).toBeVisible();
+    await expect(page).toHaveTitle('Customers | Acme Dashboard');
+    await expect(
+      page.getByRole('table').getByText('Evil Rabbit'),
+    ).toBeVisible();
     const rsc = await page.request.get(url('/RSC/R/dashboard/customers.txt'));
     expect(await rsc.text()).toContain('Evil Rabbit');
     await page.getByRole('button', { name: 'Sign Out' }).click();

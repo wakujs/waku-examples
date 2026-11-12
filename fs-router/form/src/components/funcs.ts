@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { unstable_rerenderRoute } from 'waku/router/server';
+import { requestRefresh } from 'waku/router/server';
 
 export const getMessage = async () => {
   const data = await readFile('./private/message.txt', 'utf8');
@@ -15,7 +15,7 @@ export const greet = async (formData: FormData) => {
     './private/message.txt',
     currentData + '\n' + formData.get('name') + ' from server!',
   );
-  unstable_rerenderRoute('/');
+  requestRefresh();
 };
 
 export const increment = async (count: number) => {

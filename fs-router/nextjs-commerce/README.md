@@ -33,7 +33,7 @@ from the four Next.js APIs listed below.
 | `app/error.tsx` | `<StorefrontErrorBoundary>` in the root layout |
 | `app/search/loading.tsx` | none: a `<Suspense>` above the page would keep its `<title>` out of the head |
 | `"use cache"`, `cacheTag`, `cacheLife`, `revalidateTag` | deleted — Waku has no cache |
-| `updateTag(TAGS.cart)` in the cart actions | `unstable_rerenderRoute()`, which renders the page again with the fresh cart that `useOptimistic` settles on |
+| `updateTag(TAGS.cart)` in the cart actions | `requestRefresh()`, which renders the page again with the fresh cart that `useOptimistic` settles on |
 | `cookies()` | `getRequest().headers` for reads; `src/lib/cookie-jar.ts` + `src/middleware/cookies.ts` for writes |
 | `next/link`, `next/navigation` | `src/lib/navigation.tsx` (see below) |
 | `next/image` | plain `<img>` |

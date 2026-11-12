@@ -98,7 +98,7 @@ export const signOut = () => {
 /** Replaces auth() in server components and server functions. */
 export const auth = async (): Promise<Session | null> => {
   // A cookie queued earlier in this request wins over the one the browser sent,
-  // so the render that follows signIn()/signOut() sees the new session.
+  // so code later in the same request sees the new session.
   const pending = readPendingCookie(SESSION_COOKIE);
   if (pending !== undefined) {
     return verifySessionToken(pending || undefined);

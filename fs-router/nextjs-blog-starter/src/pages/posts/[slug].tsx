@@ -1,5 +1,4 @@
 import type { PageProps } from "waku/router";
-import { unstable_notFound as notFound } from "waku/router/server";
 import Alert from "@/components/alert";
 import Container from "@/components/container";
 import Header from "@/components/header";
@@ -13,10 +12,6 @@ import markdownToHtml from "@/lib/markdownToHtml";
 // Next.js passes `params.slug` — but it arrives as a plain prop, already resolved.
 export default async function Post({ slug }: PageProps<"/posts/[slug]">) {
   const post = getPostBySlug(slug);
-
-  if (!post) {
-    notFound();
-  }
 
   const content = await markdownToHtml(post.content || "");
   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
